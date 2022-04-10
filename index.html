@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Arkansas Audio Database">
+    <meta name="keywords" content="Audio, database, arkansas, Events, Music, Musician">
+    <meta name="author" content="Divyajitsinh Mahida">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- add the SCRIPT later <script src="assets/scripts/.js" defer></script> -->
+    <!-- need to add STYLESHEET --> 
+    <title>Arkansas Audio Database</title>
+
+    <!-- Include JQuery to simplify AJAX call - See https://www.w3schools.com/jquery/jquery_get_started.asp -->
+</head>
+
+  <body>
+    <div class="container">
+    <header>
+      <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+      <h1>Arkansas Audio Database</h1>
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Events.html">All Events</a></li>
+                <li><a href="Musician.html">All Musician</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="text" id="inputValue">
+              </div>
+              
+              <button type="submit" id="search">Search a muscian </button>
+            </form>
+          </div>
+          <div id="musician-searchable">
+            
+          </div>
+    </header>
+    </div>
+    
+    <h2>Welcome to the Musician Database</h2>
+    <section id="quote" class="conatainer">
+      <blockquote>"Musicians don't retire; they stop when there's no more music in them."  <cite><br>~ Louis Armstrong </cite></blockquote>
+    </section>
+    
+    <script src="./assets/scripts/allmusician.js"></script>
+    
+    <h2>Benefit of listening to music</h2>
+      <p> Playing music regularly will physically alter your brain structure. The brain responds to music the same way it responds to something that you eat. </p>
+    
+    <section id="posts" class="container">
+      
+    <article class="posts">
+      <header>
+        <time class="post-date" datetime="1984 to present"> Active: 1984 to present</time>
+        <figure>
+          <img src="https://www.theaudiodb.com/images/media/artist/thumb/uuwwwr1380104183.jpg" alt="orbcommlanding" />
+          <figcaption>MUD</figcaption>
+        </figure>
+        <h3> <a href="https://www.theaudiodb.com/artist/123694">Justin Moore (1984)</a> </h3>
+      </header>
+    <p>”I worked hard all week but now you’re here with me, starin’ up at a summer sky. A blanket in the truck bed just gives me the go ahead ’cause we’ve got plenty of time.”-Justin Moore
+    </p>
+      <footer class="post-meta"> Own Website <a href="https://www.justinmooremusic.com/">Justin Moore Website</a>
+    </article>
+    
+    <article class="post">
+      <header>
+        <time class="post-date" datetime="1935-1977">Active:1935-1977</time>
+        <figure>
+          <img src="https://www.theaudiodb.com/images/media/artist/thumb/presley-elvis-4fd273728422c.jpg"/>
+          <figcaption>Elvin Presley</figcaption>
+        </figure>
+        <h3> <a href=https://www.theaudiodb.com/artist/111248>Elvin Presley</a> </h3>
+      </header>
+      <p>“Values are like fingerprints. Nobody's are the same, but you leave 'em all over everything you do”
+― Elvis Presley
+      </p>
+      <footer class="post-meta"> Own Website <a href="https://www.shopelvis.com/">Elvin Presley Website</a></footer>
+    </article>
+    
+    <article class="post">
+      <header>
+        <time class="post-date" datetime="1956-2003">Active: 1956-2003</time>
+        <figure>
+          <img src="https://www.theaudiodb.com/images/media/artist/thumb/rxqyxx1483806891.jpg" alt="Johnny Cash" />
+          <figcaption>DEVIL'S KNOT</figcaption>
+        </figure>
+        <h3> <a href="https://www.theaudiodb.com/artist/111372">Johnny Cash</a> </h3>
+      </header>
+      <p>“You build on failure. You use it as a stepping stone. Close the door on the past. You don't try to forget the mistakes, but you don't dwell on it. You don't let it have any of your energy, or any of your time, or any of your space.”
+― Johnny Cash</p>
+      <footer class="post-meta"> Own Website <a href="https://www.johnnycash.com/">Johnny Cash Website</a></footer>
+    </article>
+  
+  </section>
+  <h6>&copy; | Capstone Project Spring 2022 | Divyajitsinh Mahida | </h6>
+  
+      <div id="results"></div>
+    </div>
+   
+  </body>
+</html>
