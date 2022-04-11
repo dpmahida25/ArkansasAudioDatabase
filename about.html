@@ -1,1 +1,377 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="description" content="Example of theaudiodb.com">
+
+<meta name="keywords" content="HTML, CSS, JavaScript, AJAX">
+
+<meta name="author" content="Divyajitsinh Mahida">
+
+<!--we are using website viewer count CDN to keep track of each visiter-->
+
+<script async src="https://api.countapi.xyz/hit/localhost/visits?callback=callbackName"></script>
+
+<title>Example of Using theAudioDB.com</title>
+
+<!--css in style tag-->
+
+<style>
+
+/*body tag make body margin 0 and also set font family*/
+
+body {
+
+margin: 0;
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/*css for main data
+
+provide width and margin */
+
+.main {
+
+width: 1100px;
+
+margin: 0 auto;
+
+}
+
+/*css for header set background color , padding, margin bottom and text color*/
+
+header {
+
+background-color: rgb(3, 62, 65);
+
+padding: 15px;
+
+text-align: center;
+
+margin-bottom: 15px;
+
+box-shadow: 5px 5px 5px #cfcfcf;
+
+color: #fff;
+
+}
+
+/*css for input textbox*/
+
+header input {
+
+height: 40px;
+
+width: 35%;
+
+font-size: larger;
+
+}
+
+/*css for button*/
+
+header button {
+
+height: 40px;
+
+background-color: black;
+
+color: #fff;
+
+font-size: larger;
+
+border: none;
+
+width: 20%;
+
+cursor: pointer;
+
+}
+
+/*css for anchor tag in header and set its color*/
+
+header a {
+
+color: rgb(240, 243, 35);
+
+}
+
+/*css for button hover when we hover on button this background color is apply*/
+
+header button:hover {
+
+background-color: rgb(48, 48, 48);
+
+}
+
+/*css for artist profile div
+
+initally we does not show this div
+
+this div show when we hit on search button and get data*/
+
+#showArtistProfile {
+
+display: none;
+
+}
+
+/*set css for artist banner image*/
+
+#artistbanner {
+
+width: 100%;
+
+height: 250px;
+
+}
+
+/*css for h2*/
+
+h2 {
+
+background-color: rgb(3, 62, 65);
+
+color: #fff;
+
+padding: 15px;
+
+}
+
+#biography,
+
+#albumlist,
+
+#tracklist {
+
+font-size: 16px;
+
+line-height: 20px;
+
+}
+
+/*css for footer*/
+
+footer {
+
+margin-top: 20px;
+
+background-color: rgb(3, 62, 65);
+
+padding: 15px;
+
+text-align: center;
+
+color: #fff;
+
+}
+
+/*css for viewer count*/
+
+#viewerCount {
+
+color: rgb(240, 243, 35);
+
+}
+
+</style>
+
+</head>
+
+<!--body tag-->
+
+<body>
+
+<div class="">
+
+<header>
+
+<h1>Arkansas Musician Website</h1>
+
+<input type="text" id="artist">
+
+<button onclick="search();">Search</button><br><br> Try Glen Campbell, Johnny Cash, Evanescence...<br> See <a href="https://www.theaudiodb.com/" target="_blank">https://www.theaudiodb.com/</a><br>
+
+</header>
+
+</div>
+
+<!--main div to show artist profiles-->
+
+<div class="main">
+
+<div id="showArtistProfile">
+
+<h2>Artist Banner</h2>
+
+<div class="artistBanner">
+
+<img id="artistbanner">
+
+</div>
+
+<h2>Artist Biography</h2>
+
+<div id="biography"></div>
+
+<h2>Album List</h2>
+
+<div id="albumlist"></div>
+
+<h2>First Album Tracks</h2>
+
+<div id="tracklist"></div>
+
+</div>
+
+</div>
+
+<!--footer section for copyright and visiter count-->
+
+<footer>
+
+<div class="copyright">
+
+&copy;2021 Arkansas Musician Wesite | Visitor - <span id="viewerCount"></span>
+
+</div>
+
+</footer>
+
+<!--script tag for javascript-->
+
+<script>
+
+async function search() {
+
+// Artist Data
+
+// Get the artist name from the textbox; encode the artist name in case there are special characters
+
+artistSearchValue = encodeURI(document.getElementById("artist").value);
+
+// Create the search URL; Note we are using 1 as the apikey
+
+artistSearchURL = "https://theaudiodb.com/api/v1/json/2/search.php?s=" + artistSearchValue;
+
+// AJAX call to fetch the data
+
+artistObject = await fetch(artistSearchURL);
+
+artistJSONText = await artistObject.text();
+
+// Parse the JSON string into an object
+
+artistData = JSON.parse(artistJSONText);
+
+if (artistData) {
+
+var ele = document.getElementById('showArtistProfile');
+
+if (ele) {
+
+ele.setAttribute("style", "display:block");
+
+}
+
+}
+
+// Display the biography data - Note we display the first result - 0 index
+
+document.getElementById("biography").innerHTML = artistData.artists[0].strBiographyEN;
+
+// Display the artist picture - Note we display the first result - 0 index; use "/preview" for smaller image
+
+document.getElementById("artistbanner").src = artistData.artists[0].strArtistBanner + "/preview";
+
+// Album Data - Get the first Album
+
+// Get the artist ID from the artist data object; encode the artist ID in case there are special characters
+
+albumSearchValue = encodeURI(artistData.artists[0].idArtist);
+
+// Create the search URL; Note we are using 1 as the apikey
+
+albumSearchURL = "https://theaudiodb.com/api/v1/json/2/album.php?i=" + albumSearchValue;
+
+// AJAX call to fetch the data
+
+albumObject = await fetch(albumSearchURL);
+
+albumJSONText = await albumObject.text();
+
+// Parse the JSON string into an object
+
+albumData = JSON.parse(albumJSONText);
+
+// Loop through the albums
+
+albumList = "<ul>";
+
+for (i = 0; i < albumData.album.length; i++) {
+
+albumList = albumList + "<li>" + albumData.album[i].strAlbum + " (" + albumData.album[i].intYearReleased + ")</li>";
+
+}
+
+albumList = albumList + "</ul>"
+
+// Display the album names
+
+document.getElementById("albumlist").innerHTML = albumList;
+
+// Track Data - Get the tracks for the first album
+
+// Get the album ID from the artist data object; encode the album ID in case there are special characters
+
+trackSearchValue = encodeURI(albumData.album[0].idAlbum);
+
+// Create the search URL; Note we are using 1 as the apikey
+
+trackSearchURL = "https://theaudiodb.com/api/v1/json/2/track.php?m=" + trackSearchValue;
+
+// AJAX call to fetch the data
+
+trackObject = await fetch(trackSearchURL);
+
+trackJSONText = await trackObject.text();
+
+// Parse the JSON string into an object
+
+trackData = JSON.parse(trackJSONText);
+
+trackList = "<ul>";
+
+for (i = 0; i < trackData.track.length; i++) {
+
+trackList = trackList + "<li>" + trackData.track[i].strTrack + "</li>";
+
+}
+
+trackList = trackList + "</ul>"
+
+// Display the track names for first album
+
+document.getElementById("tracklist").innerHTML = trackList;
+
+}
+
+//this is a callback function to get review
+
+function callbackName(response) {
+
+//get data from response and set it to viewerCount span
+
+document.getElementById('viewerCount').innerText = response.value;
+
+}
+
+</script>
+
+</body>
+
+</html>
