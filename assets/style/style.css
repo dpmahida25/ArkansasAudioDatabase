@@ -53,12 +53,12 @@ body{
     border-radius: .25rem;
 }
 
-#movies-searchable {
+#musician-searchable {
     margin-top: 20px;
 }
 
 
-.resultBanner {
+.resultsBanner {
   display: inline;
   flex-direction: row;
   justify-content: space-around;
@@ -67,25 +67,13 @@ body{
   max-width:200px;
 }
 
-#allmusicianList {
-  display: grid;
-  text-align: center;
-  justify-content: space-around;
-  padding: 10px 10px 10px 10px;
-  grid-template-columns: 200px 200px 200px 200px;
-}
-
-#allMoviesList > div {
-  box-shadow: 5px 5px 15px black;
-}
-
-#allmusicianList {
+#allmusiciansList {
   text-align: center;
   display: grid;
   grid-template-columns: 200px 200px 200px 200px;
 }
 
-#allmusicianList > div {
+#allmusiciansList > div {
   box-shadow: 5px 5px 15px black;
 }
 
