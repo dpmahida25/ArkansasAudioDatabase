@@ -68,10 +68,8 @@ body{
 }
 
 #allmusiciansList {
-   display: grid;
-  text-align: center;
-  justify-content: space-around;
-  padding: 10px 10px 10px 10px;
+   text-align: center;
+  display: grid;
   grid-template-columns: 200px 200px 200px 200px;
 }
 
