@@ -70,11 +70,11 @@ body{
 #allmusiciansList {
   text-align: center;
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-columns: 50px 50px 50px 50px;
 }
 
 #allmusiciansList > div {
-  box-shadow: 5px 5px 15px black;
+  box-shadow: 10px 10px 10px Red;
 }
 
 h2 {
