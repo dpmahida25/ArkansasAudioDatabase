@@ -1,1 +1,96 @@
 
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* ---------------Utility Style----------------- */
+
+
+
+/* ---------------Responsive Image----------------- */
+img{
+  max-width:100%;
+  height:auto;
+}
+
+/* ---------------Global Styles----------------- */
+
+
+body{
+  color: #2D3540;
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  background: #BCBFBA;
+}
+
+
+#quote blockquote{
+  background: rgba(0,0,0,.15);
+  padding:40px 60px;
+  font-size: 1.2em;
+  border: 8px double grey;
+  border-radius: 16px;
+}
+
+
+#posts {
+  display: flex;
+  justify-content:space-between;
+  }
+
+
+#search {
+    color: #ba3a30;
+    background-color: #fff;
+    outline: none;
+    min-height: 38px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+#movies-searchable {
+    margin-top: 20px;
+}
+
+
+.resultBanner {
+  display: inline;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 2px 4px 8px rgba(0,0,0,1);
+  max-width:200px;
+}
+
+#allmusicianList {
+  display: grid;
+  text-align: center;
+  justify-content: space-around;
+  padding: 10px 10px 10px 10px;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+
+#allMoviesList > div {
+  box-shadow: 5px 5px 15px black;
+}
+
+#allmusicianList {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+
+#allmusicianList > div {
+  box-shadow: 5px 5px 15px black;
+}
+
+h2 {
+  text-align: center;
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+}
