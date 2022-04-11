@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Arkansas Audio Database">
+    <meta name="keywords" content="Audio, database, arkansas, Events, Music, Musician">
+    <meta name="author" content="Divyajitsinh Mahida">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- add the SCRIPT later <script src="assets/scripts/.js" defer></script> -->
+    <!-- need to add STYLESHEET --> 
+    <title>Arkansas Audio Database</title>
 
+    <!-- Include JQuery to simplify AJAX call - See https://www.w3schools.com/jquery/jquery_get_started.asp -->
+</head>
+
+  <body>
+    <div class="container">
+    <header>
+      <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+      <h1>Arkansas Audio Database</h1>
+          <div>
+            <div>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Events.html">All Events</a></li>
+                <li><a href="Musician.html">All Musician</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="text" id="inputValue">
+              </div>
+              
+              <button type="submit" id="search">Search a muscian </button>
+            </form>
+          </div>
+          <div id="musician-searchable">
+            
+          </div>
+    </header>
+      
+      <h2> All Musicians </h2>
+      <div id = "allmusicianslist">
+        <div class="resultBanner">
+          Ketty Lester<a href="https://www.theaudiodb.com/artist/163695" alt="Ketty Lester"><img src="https://www.theaudiodb.com/images/media/artist/thumb/bp4pks1606280510.jpg"></a></div><div class= "resultBanner">
+          Justin Moore<a href="https://www.theaudiodb.com/artist/123694" alt="Justin Moore"><img src="https://www.theaudiodb.com/images/media/artist/thumb/uuwwwr1380104183.jpg"></a></div><div class= "resultBanner">
+          Buddy Jewell<a href="https://www.theaudiodb.com/artist/111924" alt="Buddy Jewell"><img src="https://www.theaudiodb.com/images/media/artist/thumb/ytyprs1341305749.jpg"></a></div><div class= "resultBanner">
+          John Stubblefield<a href="https://www.theaudiodb.com/artist/158863" alt="John Stubblefield"><img src="https://www.theaudiodb.com/images/media/artist/thumb/uqrxvv1579535027.jpg"></a></div><div class= "resultBanner">
+          Terry Clark<a href="https://www.theaudiodb.com/artist/157252" alt="Terry Clark"><img src="https://www.theaudiodb.com/images/media/artist/thumb/ryrsqu1570204851.jpg"></a></div><div class= "resultBanner">
+          Living Sacrifice<a href="https://www.theaudiodb.com/artist/139502" alt="Living Sacrifice"><img src="https://www.theaudiodb.com/images/media/artist/thumb/xqywtq1444673032.jpg"></a></div><div class= "resultBanner">
+          Lenny Williams<a href="https://www.theaudiodb.com/artist/145514" alt="Lenny Williams"><img src="https://www.theaudiodb.com/images/media/artist/thumb/txpwsq1482730217.jpg"></a></div><div class= "resultBanner">
+          Beth Ditto<a href="https://www.theaudiodb.com/artist/124673" alt="Beth Ditto"><img src="https://www.theaudiodb.com/images/media/artist/thumb/tyvsxv1420036739.jpg"></a></div><div class= "reultBanner">
+          Rwake<a href="https://www.theaudiodb.com/artist/166234" alt="Rwake"><img src="https://www.metalorgie.com/grp_tof/Rwake.jpg"></a></div><div class= "resultBanner">
+          Angry Samoans<a href="https://www.theaudiodb.com/artist/138259" alt="Angry Samoans"><img src="https://img.discogs.com/jLKoNEcI8v5zIVSf6w1MNixcdas=/fit-in/600x929/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4201354-1358386352-9174.jpeg.jpg"></a></div><div class= "resultBanner">
+          Narvel Felts<a href="https://www.theaudiodb.com/artist/157052" alt="Narvel Felts"><img src="https://images-na.ssl-images-amazon.com/images/I/710-vYwwQML.jpg"></a></div><div class= "resultBanner">
+          Barbara Fairchild<a href="https://www.theaudiodb.com/artist/165486" alt="Barbara Fairchild"><img src="https://www.theaudiodb.com/images/media/artist/thumb/h6bg0g1615063919.jpg"></a></div><div class= "resultBanner">
+          Ronnie Dunn<a href="https://www.theaudiodb.com/artist/124477" alt="Ronnie Dunn"><img src="https://www.theaudiodb.com/images/media/artist/thumb/tqxtys1431648729.jpg"></a></div><div class= "resultBanner">
+          Collin Raye<a href="https://www.theaudiodb.com/artist/116261" alt="Collin Raye"><img src="https://www.theaudiodb.com/images/media/artist/thumb/wsptrr1363113260.jpg"></a></div><div class= "resultBanner">
+          Dale Hawkins<a href="https://www.theaudiodb.com/artist/121125" alt="Dale Hawkins"><img src="https://www.theaudiodb.com/images/media/artist/thumb/rrrpux1389820567.jpg"></a></div><div class= "resultBanner">
+          Ne-Yo<a href="https://www.theaudiodb.com/artist/114274" alt="Ne-Yo"><img src="https://www.theaudiodb.com/images/media/artist/thumb/xvyrvr1363563854.jpg"></a></div><div class= "resultBanner">
+          O.C. Smith<a href="https://www.theaudiodb.com/artist/163727" alt="O.C. smith"><img src="https://www.theaudiodb.com/images/media/artist/thumb/rniodf1606347594.jpg"></a></div><div class= "resultBanner">
+          Art Porter<a href="https://www.theaudiodb.com/artist/158614" alt="Art Porter"><img src="https://www.theaudiodb.com/images/media/artist/thumb/rvptxr1578746143.jpg"></a></div><div class= "resultBanner">
+          Pharoah Sanders<a href="https://www.theaudiodb.com/artist/125906" alt="Pharoah Sanders"><img src="https://www.theaudiodb.com/images/media/artist/thumb/wwrtqx1386890701.jpg"></a></div><div class= "resultBanner">
+          Elvis Presley<a href="https://www.theaudiodb.com/artist/111248" alt="Elvis Presley"><img src="https://www.theaudiodb.com/images/media/artist/thumb/presley-elvis-4fd273728422c.jpg"></a></div><div class= "resultBanner">
+          Lucinda Williams<a href="https://www.theaudiodb.com/artist/113754"  alt="Lucinda Williams"><img src="https://www.theaudiodb.com/images/media/artist/thumb/ryytry1355066921.jpg"></a></div><div class= "resultBanner">
+          Point of Grace<a href="https://www.theaudiodb.com/artist/130180" alt="Point of Grace"><img src="https://www.theaudiodb.com/images/media/artist/thumb/xrsyyy1551183018.jpg"></a></div><div class= "resultBanner">
+          Tracy Lawrence<a href="https://www.theaudiodb.com/artist/117886" alt="Tracy Lawrence"><img src="https://www.theaudiodb.com/images/media/artist/thumb/lawrence-tracy-50b7a99b2b6ae.jpg"></a></div><div class= "resultBanner">
+          Iris DeMent<a href="https://www.theaudiodb.com/artist/121842" alt="Iris DeMent"><img src="https://www.theaudiodb.com/images/media/artist/thumb/sptrvs1389875149.jpg"></a></div><div class= "resultBanner">
+          Twila Paris<a href="https://www.theaudiodb.com/artist/144548" alt="Twila Paris"><img src="https://www.theaudiodb.com/images/media/artist/thumb/rvywys1476186378.jpg"></a></div><div class= "resultBanner">
+          Al Green<a href="https://www.theaudiodb.com/artist/111423"  alt="Al Green"><img src="https://www.theaudiodb.com/images/media/artist/thumb/yypqsy1454453781.jpg"></a></div><div class= "resultBanner">
+          Floyd Cramer<a href="https://www.theaudiodb.com/artist/163663"  alt="Floyd Cramer"><img src="https://www.theaudiodb.com/images/media/artist/thumb/wwgi6v1606270704.jpg"></a></div><div class= "resultBanner">
+          Evanescence<a href="https://www.theaudiodb.com/artist/111766" alt="Evanescence"><img src="https://www.theaudiodb.com/images/media/artist/thumb/rsptvr1352123819.jpg"></a></div><div class= "resultBanner">
+          Charlie Rich<a href="https://www.theaudiodb.com/artist/136943" alt="Charlie Rich"><img src="https://www.theaudiodb.com/images/media/artist/thumb/rich-charlie-50979b9f15023.jpg"></a></div><div class= "resultBanner">
+          Sonny Burgess<a href="https://www.theaudiodb.com/artist/128357" alt="Sonny Burgess"><img src="https://i.pinimg.com/originals/31/e7/88/31e788c7c80e01e08e7f8b9329ac3751.jpg"></a></div><div class= "resultBanner">
+          Jimmy Driftwood<a href="https://www.theaudiodb.com/artist/164334" alt="Jimmy Driftwood"><img src="https://www.countrythangdaily.com/wp-content/uploads/2019/06/Jimmy-Driftwood.jpg"></a></div><div class= "resultBanner">
+          Ronnie Hawkins<a href="https://www.theaudiodb.com/artist/151520" alt="Ronnie Hawkins"><img src="https://www.theaudiodb.com/images/media/artist/thumb/yppqpv1534731001.jpg"></a></div><div class= "resultBanner">
+          Son Seals<a href="https://www.theaudiodb.com/artist/116654"  alt="Son Seals"><img src="https://www.theaudiodb.com/images/media/artist/thumb/wtuqtt1363711305.jpg"></a></div><div class= "resultBanner">
+          Conway Twitty<a href="https://www.theaudiodb.com/artist/116263" alt="Conway Twitty"><img src="https://www.theaudiodb.com/images/media/artist/thumb/wyruup1363114678.jpg"></a></div><div class= "resultBanner">
+          Glen Campbell<a href="https://www.theaudiodb.com/artist/123071" alt="Glen Campbell"><img src="https://www.theaudiodb.com/images/media/artist/thumb/campbell-glen-4fff9f54cfe83.jpg"></a></div><div class= "resultBanner">
+          Johnny Cash<a href="https://www.theaudiodb.com/artist/111372" alt="Johnny Cash"><img src="https://www.theaudiodb.com/images/media/artist/thumb/rxqyxx1483806891.jpg"></a></div><div class= "resultBanner">
+        <div id="results"></div>
+        </div>
+        <script src="assets/scripts/allmusicians.js"></script>
+        </body>
+      </html>
