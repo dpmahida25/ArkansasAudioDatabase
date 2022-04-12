@@ -1,16 +1,8 @@
 
 
 .form-group {
-        margin-top: 40px;
-        border: 0;
-        border-radius:0;
-        box-shadow: none;
-        background: rgba(0,0,0,0.25);
-        -webkit-transition: all 0.25s ease;
-        -moz-transition: all 0.25s ease;
-        -ms-transition: all 0.25s ease;
-        -o-transition: all 0.25s ease;
-        transition: all 0.25s ease;
+    margin-bottom: 1rem;
+    
 }
 
 
@@ -32,9 +24,6 @@ color: #ffffff;
   font-family: 'cursive';
   margin:0;
   background-image: url(https://i.pinimg.com/originals/c3/08/9f/c3089f335253c221e952a78641006813.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
         
 }
 
@@ -93,7 +82,7 @@ color: #ffffff;
 }
 
 h2 {
-  text-align: center;
+ text-align: center;
   grid-column: 1 / 4;
   grid-row: 4 / 5;
 }
