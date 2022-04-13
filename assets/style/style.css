@@ -105,6 +105,9 @@ color: #ffffff;
 #allmusiciansList > div {
   box-shadow: 5px 5px 15px Red;
 }
+h1{
+   text-align: center;
+}
 
 h2 {
  text-align: center;
