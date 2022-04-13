@@ -1,33 +1,47 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <title>CONTACT US Musician Database</title>
-  <meta charset="UTF-8"/>
-  <meta name="FAQS" content="contact us, arkansas events, arkansas musicians"/>
-  <meta name="robots" content="noindex">
-  <meta name="author" content="Divyajitsinh Mahida"/>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Arkansas Audio Database">
+    <meta name="keywords" content="Audio, database, arkansas, Events, Music, Musician">
+    <meta name="author" content="Divyajitsinh Mahida">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <!-- add the SCRIPT later <script src="assets/scripts/.js" defer></script> -->
+    <!-- need to add STYLESHEET --> 
+    <title>Arkansas Audio Database</title>
+
+    <!-- Include JQuery to simplify AJAX call - See https://www.w3schools.com/jquery/jquery_get_started.asp -->
 </head>
-<body>
-  <main class="container">
-    <header class="primary">
-      
-      <header>
-      <a href="moviedatabase.html"><img src="assets/images/logo.png" alt="logo"></a>
+
+  <body>
+    <div class="container">
+    <header>
+      <a href="index.html"><img src="assets/Arkansas.jpeg" alt="logo"></a>
       <h1>Arkansas Audio Database</h1>
-    </header>
-      
-   <header role="banner" class="primary">
-    <nav role="navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Search Engine</a></li>
-        <li><a href="Events.html">All Events</a></li>
-        <li><a href="Musician.html">All Musician</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+          <div>
+            <div>
+                <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Search Engine</a></li>
+                <li><a href="Events.html">All Events</a></li>
+                <li><a href="Musician.html">All Musician</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+                </nav>
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="text" id="inputValue">
+              </div>
+              
+              <button type="submit" id="search">Search a muscian </button>
+            </form>
+          </div>
+          <div id="musician-searchable">
+            
+          </div>
     </header>
       
       <div id="wufoo-zakl7yt0b9ideu"> 
