@@ -59,11 +59,11 @@ color: #ffffff;
 
 
 #quote blockquote{
-  background: rgba(245, 39, 39, 0.8);
-  padding:40px 60px;
+  background: rgba(255,0,0,0.3);
+  padding:40px 50px;
   font-size: 1.2em;
-  border: 8px double red;
-  border-radius: 16px;
+  border: 8px double grey;
+  border-radius: 35px;
 }
 
 
@@ -71,6 +71,16 @@ color: #ffffff;
   display: flex;
   justify-content:space-between;
   }
+
+#post-date{
+    text-align: center;
+    text-color: white;
+}
+
+#post-meta{
+    text-align: center;
+    text-color: white;
+}
 
 
 #search {
@@ -103,6 +113,8 @@ color: #ffffff;
 
 #allmusiciansList {
   text-align: center;
+  text-color:red;
+  font-size:18px;
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
 }
@@ -113,6 +125,7 @@ color: #ffffff;
 h1{
    text-align: center;
     color: White;
+    font-size:35px;
 }
 
 h2 {
