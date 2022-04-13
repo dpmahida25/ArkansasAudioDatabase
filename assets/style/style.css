@@ -4,7 +4,7 @@
 }
 
 nav{
-    background-color: darkred;
+    background-color: White;
 }
 
 nav ul{
@@ -20,7 +20,7 @@ nav ul li{
     transition: .3s ease-in;
 }
 li:hover{
-    background-color: white;
+    background-color: Red;
 }
 
 .form-group {
@@ -51,7 +51,7 @@ body{
 color: #ffffff;
   font-family: 'cursive';
   margin:0;
-  background-image: url(https://wallpapercave.com/wp/wp2971581.jpg);
+  background-image: url(https://wallpapercave.com/wp/wp2910967.jpg);
   background-repeat: no-repeat;
   background-size: cover;
         
@@ -112,7 +112,7 @@ color: #ffffff;
 }
 h1{
    text-align: center;
-    color: red;
+    color: White;
 }
 
 h2 {
