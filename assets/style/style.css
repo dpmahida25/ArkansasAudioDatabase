@@ -39,6 +39,11 @@ img{
   height:auto;
 }
 
+logo{
+    max-width:100%;
+        height:auto;
+}
+
 /* ---------------Global Styles----------------- */
 
 
@@ -107,6 +112,7 @@ color: #ffffff;
 }
 h1{
    text-align: center;
+    color: red;
 }
 
 h2 {
