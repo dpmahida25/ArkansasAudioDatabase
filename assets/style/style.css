@@ -20,7 +20,7 @@ nav ul li{
     transition: .3s ease-in;
 }
 li:hover{
-    background-color: black;
+    background-color: white;
 }
 
 .form-group {
@@ -35,8 +35,8 @@ li:hover{
 
 /* ---------------Responsive Image----------------- */
 img{
-  max-width:100%;
-  height:auto;
+  max-width:50%;
+  height:50%;
 }
 
 /* ---------------Global Styles----------------- */
