@@ -146,11 +146,11 @@ h2 {
   grid-row: 4 / 5;
 }
 footer {
-   position: fixed;
+   position: bottom;
    left: 0;
    bottom: 50;
    width: 100%;
-   background-color: maroon;
+   background-color: black;
    color: white;
    text-align: center;
 }
