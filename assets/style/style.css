@@ -146,8 +146,9 @@ h2 {
   grid-row: 4 / 5;
 }
 footer {
+   position: fixed;
    left: 0;
-   bottom: 100;
+   bottom: 80;
    width: 100%;
    background-color: red;
    color: white;
