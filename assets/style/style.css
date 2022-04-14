@@ -128,11 +128,11 @@ color: #ffffff;
   text-color:red;
   font-size:18px;
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-columns: 250px 250px 250px 250px;
 }
 
 #alleventsList > div {
-  box-shadow: 5px 5px 15px grey;
+  box-shadow: 5px 5px 15px black;
 }
 h1{
    text-align: center;
@@ -150,7 +150,7 @@ footer {
    left: 0;
    bottom: 80;
    width: 100%;
-   background-color: red;
+   background-color: maroon;
    color: white;
    text-align: center;
 }
