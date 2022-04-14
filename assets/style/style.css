@@ -126,13 +126,13 @@ color: #ffffff;
 #alleventsList {
   text-align: center;
   text-color:red;
-  font-size:18px;
+  font-size:20px;
   display: grid;
-  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-columns: 300px 300px 300px 300px;
 }
 
 #alleventsList > div {
-  box-shadow: 5px 5px 15px black;
+  box-shadow: 5px 5px 15px maroon;
 }
 h1{
    text-align: center;
